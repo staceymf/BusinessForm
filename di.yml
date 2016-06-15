@@ -1,0 +1,9 @@
+services:
+    # Reset slim response to not use encryption for cookies
+    slim.response:
+        class: 'Slim\Http\Response'
+
+    page.home:
+        class: 'TestApplication\TestController'
+        arguments:
+            - '@slim.response'

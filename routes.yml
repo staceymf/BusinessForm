@@ -1,0 +1,5 @@
+parameters:
+    routes:
+        home:
+            route: '/'
+            stack: ['page.home']
